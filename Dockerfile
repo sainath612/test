@@ -8,4 +8,4 @@ RUN unzip apache-tomcat-10.0.27.zip
 RUN mv apache-tomcat-10.0.27/* /opt/tomcat
 WORKDIR /opt/tomcat/apache-tomcat-10.0.27/bin
 EXPOSE 8080
-CMD ["/opt/tomcat/apache-tomcat-10.0.27/bin/catalina.sh", "run"]
+CMD ["catalina.sh", "run"]
