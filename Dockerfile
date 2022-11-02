@@ -7,6 +7,5 @@ ADD https://dlcdn.apache.org/tomcat/tomcat-10/v10.0.27/bin/apache-tomcat-10.0.27
 RUN unzip apache-tomcat-10.0.27.zip
 RUN mv apache-tomcat-10.0.27/* /opt/tomcat
 WORKDIR /opt/tomcat/apache-tomcat-10.0.27/bin
-RUN chmod a+x catalina.sh
 EXPOSE 8080
 CMD ["/opt/tomcat/apache-tomcat-10.0.27/bin/catalina.sh", "run"]
