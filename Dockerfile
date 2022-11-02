@@ -1,4 +1,4 @@
-FROM ubunut:latest
+FROM ubuntu:latest
 RUN apt install java -y
 RUN apt install unzip 
 RUN mkdir /opt/tomcat
