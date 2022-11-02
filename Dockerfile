@@ -1,5 +1,6 @@
 FROM ubuntu:latest
-RUN apt install java -y
+RUN apt update
+RUN apt install openjdk-11-jre
 RUN apt install unzip 
 RUN mkdir /opt/tomcat
 WORKDIR /opt/tomcat
