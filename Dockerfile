@@ -1,6 +1,5 @@
 FROM ubuntu:latest
-RUN apt update -y
-RUN apt install openjdk-11-jre -y
+RUN apt install java -y
 RUN apt install unzip 
 RUN mkdir /opt/tomcat
 WORKDIR /opt/tomcat
@@ -9,3 +8,4 @@ RUN unzip apache-tomcat-10.0.27.zip
 RUN mv apache-tomcat-10.0.27/* /opt/tomcat
 EXPOSE 8080
 CMD ["/opt/tomcat/bin/catalina.sh", "run"]
+CMD ["/opt/tomcat/bin/start.sh", "run"]
